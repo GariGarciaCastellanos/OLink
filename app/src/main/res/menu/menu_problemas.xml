@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_buscar"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Buscar"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/filtroTipo"
+        android:title="Filtro por tipo">
+        <menu>
+            <item
+                android:id="@+id/filtroTodos"
+                android:title="Todos" />
+            <item
+                android:id="@+id/filtroTipoNoise"
+                android:title="Noise" />
+            <item
+                android:id="@+id/filtroTipoManufacture"
+                android:title="Manufactured mistake" />
+            <item
+                android:id="@+id/filtroTipoDelivered"
+                android:title="Not delivered" />
+            <item
+                android:id="@+id/filtroTipoConstruction"
+                android:title="Building construction mistake" />
+        </menu>
+    </item>
+</menu>
